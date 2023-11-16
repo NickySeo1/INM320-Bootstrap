@@ -18,8 +18,8 @@
     <section id="bootstrap" class="border container-fluid">
         <section class="row">
             <!-- Side bar section -->
-            <header id="sideBar" class="col-12 col-sm-12 col-lg-2 visible-lg-block">
-            </header>
+            <section id="sideBar" class="col-12 col-sm-12 col-lg-2 visible-lg-block">
+            </section>
 
             <!-- burger menu -->
             <!-- <button type="button" class="navBar-toggle collapsed visible-xs-block">x</button>
@@ -28,69 +28,151 @@
             
             <!-- Overview section -->
             <section id="overview" class="col-12 col-sm-12 col-lg-10 ">
+                
+                <!-- Header -->
+                <section id="overviewHeader" class="row">
+                   <header class="col-12">
+                    <section id="title"><h1>Overview</h1></section>
+                    <section id="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                        </svg>
+                        <p>Jones Ferdinand</p>
+                        <img src="assets/images/profile_photo.png" alt="">
+                    
+                    </section>
+
+                   </header>     
+                </section>
+
                 <!-- First row -->
                 <section id="firstRow" class="row">
-                    <article class="col-12 col-sm-6 col-lg-3">
-                        <h2>Unresolved</h2>
-                        <p>60</p>
-                    </article>
+                    <section class="col-12">
+                        <section id="firstRowBox" class="row">
+                            <article class="firstRowArticle col-12 col-sm-6 col-lg-3">
+                                <h2>Unresolved</h2>
+                                <p>60</p>
+                            </article>
 
-                    <article class="col-12 col-sm-6 col-lg-3">
-                        <h2>Overdue</h2>
-                        <p>16</p>
-                    </article>
+                            <article class="firstRowArticle col-12 col-sm-6 col-lg-3">
+                                <h2>Overdue</h2>
+                                <p>16</p>
+                            </article>
 
-                    <article class="col-12 col-sm-6 col-lg-3">
-                        <h2>Open</h2>
-                        <p>43</p>
-                    </article>
+                            <article class="firstRowArticle col-12 col-sm-6 col-lg-3">
+                                <h2>Open</h2>
+                                <p>43</p>
+                            </article>
 
-                    <article class="col-12 col-sm-6 col-lg-3">
-                        <h2>On hold</h2>
-                        <p>64</p>
-                    </article>    
+                            <article class="firstRowArticle col-12 col-sm-6 col-lg-3">
+                                <h2>On hold</h2>
+                                <p>64</p>
+                            </article>
+                        </section>    
+                    </section>
                 </section>
+
                 <!-- Second row -->
                 <section id="secondRow" class="row">
-                    <article id="todaysTrends" class="col-12 col-sm-12 col-lg-8">
-                        <img src="" alt="">
-                    </article>
-
-                    <section id="additionalInfo" class="col-12 col-sm-12 col-lg-4">
-                        <article>
-                            <h2>Resolved</h2>
-                            <p>449</p>
+                    <section id="secondRowBox" class="col-12 row">
+                        <article id="todaysTrends" class="col-12 col-sm-12 col-lg-8">
+                            <h2>Today's trends</h2>
+                            <img src="assets/images/puppy_placeholder.jpeg" alt="">
                         </article>
 
-                        <article>
-                            <h2>Received</h2>
-                            <p>426</p>
-                        </article>
+                        <section id="additionalInfo" class="col-12 col-sm-12 col-lg-4">
+                            <article class="secondRowArticle">
+                                <h2>Resolved</h2>
+                                <p>449</p>
+                            </article>
+                           
+                            <article class="secondRowArticle">
+                                <h2>Received</h2>
+                                <p>426</p>
+                            </article>
 
-                        <article>
-                            <h2>Average first reponse time</h2>
-                            <p>33m</p>
-                        </article>
+                            <article class="secondRowArticle">
+                                <h2>Average first reponse time</h2>
+                                <p>33m</p>
+                            </article>
 
-                        <article>
-                            <h2>Average response time</h2>
-                            <p>3h 8m</p>
-                        </article>
+                            <article class="secondRowArticle">
+                                <h2>Average response time</h2>
+                                <p>3h 8m</p>
+                            </article>
 
-                        <article>
-                            <h2>Resolution within SLA</h2>
-                            <p>94%</p>
-                        </article>
+                            <article class="secondRowArticle">
+                                <h2>Resolution within SLA</h2>
+                                <p>94%</p>
+                            </article>
+                            </section>
                     </section>
                 </section>    
+
                 <!-- Third row -->
                 <section id="thirdRow" class="row">
-                    <section id="UnresolvedTicket" class="col-12 col-sm-6">
+                    <section class="col-12">
+                        <section id="thirdRowBox" class="row">
+                            <section id="unresolvedTicket" class="col-12 col-sm-6">
+                                <section class="unresolvedTicketContents">
+                                    <h2>Unresolved tickets</h2>
+                                    <p class="highlight">View details</p>
+                                </section>
 
-                    </section>
+                                <section class="unresolvedTicketContents">
+                                    <h3>Waiting on Feature Request</h3>
+                                    <p class="number">4238</p>
+                                </section>
 
-                    <section id="task" class="col-12 col-sm-6">
+                                <section class="unresolvedTicketContents">
+                                    <h3>Awaiting Customer Response</h3>
+                                    <p class="number">1005</p>
+                                </section>
 
+                                <section class="unresolvedTicketContents">
+                                    <h3>Awaiting Dveloper Fix</h3>
+                                    <p class="number">914</p>
+                                </section>
+
+                                <section class="unresolvedTicketContents">
+                                    <h3>Pending</h3>
+                                    <p class="number">281</p>
+                                </section>
+                            </section>
+
+                        
+
+                            <section id="task" class="col-12 col-sm-6">
+                                <section>
+                                    <h2></h2>
+                                    <p></p>
+                                </section>
+
+                                <section>
+                                    <h3></h3>
+                                    <p></p>
+                                </section>
+
+                                <section>
+                                    <h3></h3>
+                                    <p></p>
+                                </section>
+
+                                <section>
+                                    <h3></h3>
+                                    <p></p>
+                                </section>
+
+                                <section>
+                                    <h3></h3>
+                                    <p></p>
+                                </section>
+
+                            </section>
+                        </section>
                     </section>
                 </section>
 
